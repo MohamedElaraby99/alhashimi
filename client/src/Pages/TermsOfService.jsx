@@ -34,7 +34,7 @@ export default function TermsOfService() {
                   مقدمة
                 </h2>
                 <p className="text-gray-700 dark:text-gray-300 mb-4">
-                  مرحباً بك في نظام إدارة التعلم من الهاشمي. من خلال الوصول إلى منصتنا واستخدامها، 
+                  مرحباً بك في نظام إدارة التعلم من Mostafa Elbaz. من خلال الوصول إلى منصتنا واستخدامها، 
                   فإنك توافق على الالتزام بشروط الخدمة هذه. إذا كنت لا توافق على هذه الشروط، 
                   يرجى عدم استخدام خدماتنا.
                 </p>
@@ -174,7 +174,7 @@ export default function TermsOfService() {
                 <div className="space-y-4">
                   <p className="text-gray-700 dark:text-gray-300">
                     جميع المحتوى على هذه المنصة، بما في ذلك الدورات والمواد والبرامج، 
-                    مملوك لشركة الهاشمي أو المرخصين لها ومحمي بقوانين حقوق النشر.
+                    مملوك لشركة Mostafa Elbaz أو المرخصين لها ومحمي بقوانين حقوق النشر.
                   </p>
                   <p className="text-gray-700 dark:text-gray-300">
                     لا يجوز لك إعادة إنتاج أو توزيع أو إنشاء أعمال مشتقة دون إذن صريح.
@@ -251,7 +251,7 @@ export default function TermsOfService() {
                 </h2>
                 <div className="space-y-4">
                   <p className="text-gray-700 dark:text-gray-300">
-                    تقدم شركة الهاشمي المحتوى التعليمي والخدمات "كما هي" دون ضمانات.
+                    تقدم شركة Mostafa Elbaz المحتوى التعليمي والخدمات "كما هي" دون ضمانات.
                   </p>
                   <p className="text-gray-700 dark:text-gray-300">
                     نحن لسنا مسؤولين عن أي أضرار غير مباشرة أو عرضية أو تبعية.
@@ -290,7 +290,7 @@ export default function TermsOfService() {
                     <p><strong>البريد الإلكتروني:</strong> softwarefikra@gmail.com</p>
                     <p><strong>الهاتف:</strong> +201207039410</p>
                     <p><strong>العنوان:</strong> المنصورة، شارع 18 توريل، مصر</p>
-                    <p><strong>الموقع الإلكتروني:</strong> https://the-eagle.fikra.solutions/</p>
+                    <p><strong>الموقع الإلكتروني:</strong> https://mrmostafaelbaz.online/</p>
                   </div>
                 </div>
               </section>
@@ -298,7 +298,7 @@ export default function TermsOfService() {
               {/* Footer */}
               <div className="border-t border-gray-200 dark:border-gray-700 pt-6 mt-8">
                 <p className="text-sm text-gray-500 dark:text-gray-400 text-center">
-                  من خلال استخدام منصة شركة الهاشمي، فإنك تقر بأنك قد قرأت وفهمت 
+                  من خلال استخدام منصة شركة Mostafa Elbaz، فإنك تقر بأنك قد قرأت وفهمت 
                   وتوافق على الالتزام بشروط الخدمة هذه.
                 </p>
               </div>

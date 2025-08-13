@@ -127,7 +127,7 @@ export default function Navbar() {
 
             <div className="flex flex-col">
               <span className="oi-regular text-2xl font-bold text-amber-600 group-hover:text-amber-700 transition-colors duration-300 dark:text-amber-400 dark:group-hover:text-amber-300 dark:drop-shadow-[0_0_20px_rgba(217,119,6,0.5)] dark:group-hover:drop-shadow-[0_0_25px_rgba(217,119,6,0.7)]">
-                الهاشمي
+                Mostafa Elbaz
               </span>
               
             </div>

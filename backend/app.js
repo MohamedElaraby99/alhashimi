@@ -38,19 +38,18 @@ const corsOptions = {
         if (!origin) return callback(null, true);
         
         const allowedOrigins = [
-            'http://localhost:5173',
-            'http://localhost:5180',
-            'https://the-eagle.fikra.solutions',
-            'https://www.the-eagle.fikra.solutions',
-            'https://api.the-eagle.fikra.solutions'
+            'http://localhost:5185',
+            'https://mrmostafaelbaz.online',
+            'https://www.mrmostafaelbaz.online',
+            'https://api.mrmostafaelbaz.online'
         ];
         
         // Check if origin is allowed
         if (allowedOrigins.includes(origin)) {
             callback(null, true);
         } else {
-            // Allow subdomains of the-eagle.fikra.solutions
-            if (origin.endsWith('.the-eagle.fikra.solutions')) {
+            // Allow subdomains of mrmostafaelbaz.online
+            if (origin.endsWith('.mrmostafaelbaz.online')) {
                 callback(null, true);
             } else {
                 console.log(`🚫 CORS blocked origin: ${origin}`);

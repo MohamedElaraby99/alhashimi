@@ -11,6 +11,7 @@ import { FaUser, FaEnvelope, FaLock, FaEye, FaEyeSlash, FaUserPlus, FaGraduation
 import { axiosInstance } from "../Helpers/axiosInstance";
 import { useEffect } from "react";
 import { egyptianGovernorates } from "../utils/governorateMapping";
+import logo from "../assets/logo.png";
 
 export default function Signup() {
   const dispatch = useDispatch();
@@ -205,11 +206,16 @@ export default function Signup() {
   return (
     <Layout>
       <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-md w-full space-y-8">
+          {/* Logo Section */}
+          <div className="text-center">
           {/* Header */}
           <div className="text-center">
-            <div className="mx-auto h-20 w-20 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full flex items-center justify-center mb-6 shadow-lg">
-              <FaGraduationCap className="h-10 w-10 text-white" />
+          <div className="inline-block p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-lg mb-6">
+              <img 
+                src={logo} 
+                alt="Golden Math Center Logo" 
+                className="w-24 h-24 object-contain"
+              />
             </div>
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
               انضم إلى منصتنا التعليمية

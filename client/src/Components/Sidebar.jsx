@@ -80,7 +80,7 @@ export default function Sidebar({ hideBar = false }) {
               <AiFillCloseCircle size={20} />
             </button>
             <h2 className="text-lg font-bold text-orange-600 dark:text-orange-400">
-              الهاشمي
+              Mostafa Elbaz
             </h2>
           </div>
 

@@ -6,21 +6,17 @@ import InputBox from "../Components/InputBox/InputBox";
 import TextArea from "../Components/InputBox/TextArea";
 import Layout from "../Layout/Layout";
 import { 
-  FaPhone, 
-  FaEnvelope, 
-  FaMapMarkerAlt, 
+  FaTelegram, 
   FaFacebook, 
-  FaTwitter, 
-  FaInstagram, 
-  FaLinkedin, 
-  FaYoutube,
-  FaWhatsapp,
-  FaTelegram,
-  FaGlobe,
-  FaClock,
+  FaYoutube, 
   FaUser,
-  FaComments
+  FaComments,
+  FaGlobe,
+  FaPhone,
+  FaWhatsapp
 } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa6";
+import logo from "../assets/logo.png";
 
 export default function Contact() {
   const [isLoading, setIsLoading] = useState(false);
@@ -67,21 +63,49 @@ export default function Contact() {
     }
   }
 
-  const contactInfo = {
-    phone: "+201207039410",
-    whatsapp: "+201207039410",
-    email: "softwarefikra@gmail.com",
-    support: "softwarefikra@gmail.com",
-    address: "Mansoura, 18 Street Torel, Egypt",
-    website: "https://the-eagle.fikra.solutions/",
-    workingHours: "Monday - Friday: 9:00 AM - 6:00 PM"
-  };
-
-  const socialMedia = [
-    { name: "Facebook", icon: FaFacebook, url: "https://www.facebook.com/people/Fikra-Software-%D9%81%D9%83%D8%B1%D8%A9/61572824761047/", color: "hover:text-blue-600" },
-    { name: "LinkedIn", icon: FaLinkedin, url: "https://www.linkedin.com/company/fikra-software-%D9%81%D9%83%D8%B1%D8%A9-%D9%84%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A7%D8%AA/", color: "hover:text-blue-700" },
-    { name: "WhatsApp", icon: FaWhatsapp, url: "https://wa.me/201207039410", color: "hover:text-green-500" },
-    { name: "Website", icon: FaGlobe, url: "https://the-eagle.fikra.solutions/", color: "hover:text-purple-600" }
+  const contactMethods = [
+    { 
+      name: "واتساب / اتصال", 
+      icon: FaWhatsapp, 
+      url: "https://wa.me/201067678296", 
+      phone: "+201067678296",
+      color: "hover:text-green-500",
+      bgColor: "bg-green-100 dark:bg-green-900/20",
+      iconColor: "text-green-600 dark:text-green-400",
+      isPhone: true
+    },
+    { 
+      name: "Telegram", 
+      icon: FaTelegram, 
+      url: "https://t.me/GoldenMathCenter", 
+      color: "hover:text-blue-500",
+      bgColor: "bg-blue-100 dark:bg-blue-900/20",
+      iconColor: "text-blue-600 dark:text-blue-400"
+    },
+    { 
+      name: "Facebook", 
+      icon: FaFacebook, 
+      url: "https://www.facebook.com/share/1BHWuU7D4t/", 
+      color: "hover:text-blue-600",
+      bgColor: "bg-blue-100 dark:bg-blue-900/20",
+      iconColor: "text-blue-600 dark:text-blue-400"
+    },
+    { 
+      name: "YouTube", 
+      icon: FaYoutube, 
+      url: "https://youtube.com/@mostafaelbazedu?si=yHJ9hvVJKSY5kNlr", 
+      color: "hover:text-red-600",
+      bgColor: "bg-red-100 dark:bg-red-900/20",
+      iconColor: "text-red-600 dark:text-red-400"
+    },
+    { 
+      name: "TikTok", 
+      icon: FaTiktok, 
+      url: "https://www.tiktok.com/@mr.mostafaelbaz?is_from_webapp=1&sender_device=pc", 
+      color: "hover:text-pink-600",
+      bgColor: "bg-pink-100 dark:bg-pink-900/20",
+      iconColor: "text-pink-600 dark:text-pink-400"
+    }
   ];
 
   return (
@@ -94,8 +118,19 @@ export default function Contact() {
               تواصل معنا
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              لديك أسئلة؟ نحب أن نسمع منك. أرسل لنا رسالة وسنرد عليك في أقرب وقت ممكن.
+              لديك أسئلة؟ نحب أن نسمع منك. تواصل معنا من خلال منصاتنا الاجتماعية.
             </p>
+          </div>
+
+          {/* Logo Section */}
+          <div className="text-center mb-16">
+            <div className="inline-block p-8 bg-white dark:bg-gray-800 rounded-2xl shadow-lg">
+              <img 
+                src={logo} 
+                alt="Golden Math Center Logo" 
+                className="w-32 h-32 md:w-40 md:h-40 object-contain"
+              />
+            </div>
           </div>
 
           <div className="max-w-4xl mx-auto">
@@ -103,118 +138,52 @@ export default function Contact() {
             <div className="space-y-8">
               <div className="text-center mb-12">
                 <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
-                  معلومات الاتصال
+                  منصات التواصل الاجتماعي
                 </h2>
                 <p className="text-gray-600 dark:text-gray-300">
-                  تواصل معنا من خلال أي من هذه القنوات. نحن هنا لمساعدتك!
+                  تواصل معنا من خلال أي من هذه المنصات. نحن هنا لمساعدتك!
                 </p>
               </div>
 
-              {/* Contact Details */}
+              {/* Contact Methods Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {/* Phone */}
-                <div className="flex items-center p-4 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                  <div className="flex-shrink-0 w-12 h-12 bg-blue-100 dark:bg-blue-900/20 rounded-full flex items-center justify-center mr-4">
-                    <FaPhone className="text-blue-600 dark:text-blue-400 text-xl" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 dark:text-white">الهاتف</h3>
-                    <a href={`tel:${contactInfo.phone}`} className="text-blue-600 dark:text-blue-400 hover:underline">
-                      {contactInfo.phone}
-                    </a>
-                  </div>
-                </div>
-
-                {/* WhatsApp */}
-                <div className="flex items-center p-4 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                  <div className="flex-shrink-0 w-12 h-12 bg-green-100 dark:bg-green-900/20 rounded-full flex items-center justify-center mr-4">
-                    <FaWhatsapp className="text-green-600 dark:text-green-400 text-xl" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 dark:text-white">واتساب</h3>
-                    <a href={contactInfo.whatsapp} className="text-green-600 dark:text-green-400 hover:underline">
-                      {contactInfo.whatsapp}
-                    </a>
-                  </div>
-                </div>
-
-                {/* Email */}
-                <div className="flex items-center p-4 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                  <div className="flex-shrink-0 w-12 h-12 bg-purple-100 dark:bg-purple-900/20 rounded-full flex items-center justify-center mr-4">
-                    <FaEnvelope className="text-purple-600 dark:text-purple-400 text-xl" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 dark:text-white">البريد الإلكتروني</h3>
-                    <a href={`mailto:${contactInfo.email}`} className="text-purple-600 dark:text-purple-400 hover:underline">
-                      {contactInfo.email}
-                    </a>
-                  </div>
-                </div>
-
-                {/* Support Email */}
-                <div className="flex items-center p-4 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                  <div className="flex-shrink-0 w-12 h-12 bg-orange-100 dark:bg-orange-900/20 rounded-full flex items-center justify-center mr-4">
-                    <FaComments className="text-orange-600 dark:text-orange-400 text-xl" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 dark:text-white">الدعم</h3>
-                    <a href={`mailto:${contactInfo.support}`} className="text-orange-600 dark:text-orange-400 hover:underline">
-                      {contactInfo.support}
-                    </a>
-                  </div>
-                </div>
-
-                {/* Address */}
-                <div className="flex items-center p-4 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                  <div className="flex-shrink-0 w-12 h-12 bg-red-100 dark:bg-red-900/20 rounded-full flex items-center justify-center mr-4">
-                    <FaMapMarkerAlt className="text-red-600 dark:text-red-400 text-xl" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 dark:text-white">العنوان</h3>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      {contactInfo.address}
-                    </p>
-                  </div>
-                </div>
-
-                {/* Working Hours */}
-                <div className="flex items-center p-4 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                  <div className="flex-shrink-0 w-12 h-12 bg-indigo-100 dark:bg-indigo-900/20 rounded-full flex items-center justify-center mr-4">
-                    <FaClock className="text-indigo-600 dark:text-indigo-400 text-xl" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 dark:text-white">ساعات العمل</h3>
-                    <p className="text-gray-600 dark:text-gray-300">
-                      {contactInfo.workingHours}
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Social Media */}
-              <div className="mt-12 text-center">
-                <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-8">
-                  تابعنا
-                </h3>
-                <div className="flex flex-wrap justify-center gap-6 max-w-md mx-auto">
-                  {socialMedia.map((social, index) => (
-                    <a
-                      key={index}
-                      href={social.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={`group flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 ${social.color} hover:scale-105`}
-                      title={social.name}
-                    >
-                      <div className="w-12 h-12 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center mb-2 group-hover:bg-opacity-80 transition-colors">
-                        <social.icon className="text-2xl" />
-                      </div>
-                      <span className="text-xs font-medium text-gray-600 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white transition-colors">
-                        {social.name}
-                      </span>
-                </a>
-                  ))}
-                </div>
+                {contactMethods.map((method, index) => (
+                  <a
+                    key={index}
+                    href={method.url}
+                    target={method.isPhone ? undefined : "_blank"}
+                    rel={method.isPhone ? undefined : "noopener noreferrer"}
+                    className={`group flex items-center p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 ${method.color} hover:scale-105`}
+                    title={method.name}
+                  >
+                    <div className={`flex-shrink-0 w-16 h-16 ${method.bgColor} rounded-full flex items-center justify-center mr-6`}>
+                      <method.icon className={`text-2xl ${method.iconColor}`} />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                        {method.name}
+                      </h3>
+                      {method.isPhone ? (
+                        <p className="text-gray-600 dark:text-gray-300">
+                          {method.phone}
+                        </p>
+                      ) : (
+                        <p className="text-gray-600 dark:text-gray-300">
+                          انقر للانتقال إلى {method.name}
+                        </p>
+                      )}
+                    </div>
+                    <div className="text-gray-400 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors">
+                      {method.isPhone ? (
+                        <FaPhone className="w-6 h-6" />
+                      ) : (
+                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      )}
+                    </div>
+                  </a>
+                ))}
               </div>
             </div>
           </div>

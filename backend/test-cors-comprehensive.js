@@ -3,8 +3,8 @@
 
 import http from 'http';
 
-const BASE_URL = 'http://localhost:4003';
-const TEST_ORIGIN = 'https://www.the-eagle.fikra.solutions';
+const BASE_URL = 'http://localhost:4005';
+const TEST_ORIGIN = 'https://www.mrmostafaelbaz.online';
 
 const testEndpoints = [
     '/api/test',
@@ -19,7 +19,7 @@ async function testEndpoint(endpoint) {
     return new Promise((resolve, reject) => {
         const options = {
             hostname: 'localhost',
-            port: 4003,
+            port: 4005,
             path: endpoint,
             method: 'GET',
             headers: {
@@ -91,7 +91,7 @@ async function testOptionsRequest(endpoint) {
     return new Promise((resolve, reject) => {
         const options = {
             hostname: 'localhost',
-            port: 4003,
+            port: 4005,
             path: endpoint,
             method: 'OPTIONS',
             headers: {

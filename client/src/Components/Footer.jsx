@@ -101,7 +101,7 @@ export default function Footer() {
             مدعوم بواسطة
           </span>
           <a 
-            href="https://the-eagle.fikra.solutions/" 
+            href="https://mrmostafaelbaz.online/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="hover:opacity-80 transition-opacity duration-300"
@@ -130,8 +130,8 @@ export default function Footer() {
             </svg>
           </a>
         </div>
-        <span className="oi-regular text-xs text-gray-500 dark:text-gray-400">
-          Fikra Software - the-eagle للبرمجيات
+        <span className="oi-regular text-xs text-blue-500 dark:text-blue-400">
+          Fikra Software -  فكرة للبرمجيات
         </span>
       </div>
     </footer>

@@ -104,14 +104,14 @@ export default function HomePage() {
   const handleAPKDownload = () => {
     // Create a download link for the APK file
     const link = document.createElement('a');
-    link.href = '/downloads/the-eagle.apk'; // Update this path to your APK file location
-    link.download = 'the-eagle.apk';
+    link.href = '/downloads/mostafa-elbaz.apk'; // Update this path to your APK file location
+    link.download = 'mostafa-elbaz.apk';
     link.target = '_blank';
     
     // Fallback for mobile browsers
     if (navigator.userAgent.toLowerCase().indexOf('android') > -1) {
       // For Android devices, open the download directly
-      window.open('/downloads/the-eagle.apk', '_blank');
+      window.open('/downloads/mostafa-elbaz.apk', '_blank');
     } else {
       // For other devices, trigger download
       document.body.appendChild(link);
@@ -688,7 +688,7 @@ export default function HomePage() {
                           <FaGraduationCap className="text-white text-xl" />
                         </div>
                         <div>
-                          <h3 className="font-bold text-lg text-gray-900">تطبيق الهاشمي</h3>
+                          <h3 className="font-bold text-lg text-gray-900">تطبيق Mostafa Elbaz</h3>
                           <p className="text-sm text-gray-600">منصة التعلم الذكية</p>
                         </div>
                       </div>

@@ -53,39 +53,39 @@ const AnimatedHero = ({ onGetStarted }) => {
             <div className="space-y-4 md:space-y-6 text-right">
               {/* Badge */}
               <div className="inline-flex items-center gap-2 px-3 py-2 md:px-4 md:py-2 bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 rounded-full text-xs md:text-sm font-medium font-sans">
-                🚀
-                <span>اتقن الرياضيات كما لم تفعل من قبل!</span>
+                🎓
+                <span>تعلم الرياضيات بطريقة ممتعة ومفيدة!</span>
               </div>
 
               {/* Main Heading */}
               <h1 className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 dark:text-white leading-tight font-sans">
-                <span className="text-amber-600">انضم لأول مرة</span>
+                <span className="text-amber-600">تعلم مع مستر</span>
                 <br />
                 <span className="bg-gradient-to-r from-amber-600 via-yellow-500 to-orange-500 bg-clip-text text-transparent">
-                  إلى سلسلة "إيجل" في الرياضيات
+                   مصطفى الباز  الرياضيات
                 </span>
                 <br />
                 <span className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-gray-700 dark:text-gray-300">
-                  مع مستر مايكل روماني — العقلية التي تصنع الأوائل! 
+                  المعلم المحترف الذي يجعل الرياضيات سهلة وممتعة! 
                 </span>
               </h1>
               
               {/* Description */}
               <p className="text-base md:text-lg lg:text-xl text-gray-600 dark:text-gray-400 leading-relaxed max-w-lg font-sans">
-                اكتشف طريقتك للوصول للقمة بأسلوب قوي، منظم، وبسيط يجعل أصعب المفاهيم أسهل وأمتع!
+                استكشف عالم الرياضيات بطريقة واضحة ومنظمة، حيث تتحول المفاهيم المعقدة إلى أفكار بسيطة ومفهومة!
               </p>
 
               {/* Additional Description */}
               <p className="text-base md:text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-lg font-sans">
-                 سواء كنت تسعى للتفوق أو لفهم حقيقي، هنا مش مجرد حفظ… هنا هتفهم الرياضيات وتحترفها بثقة.
+                سواء كنت تريد تحسين مستواك أو فهم أساسيات الرياضيات، هنا ستتعلم بطريقة عملية وممتعة.
               </p>
 
               <p className="text-base md:text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-lg font-sans">
-                جاهز تبدأ رحلتك نحو القمة؟
+                هل أنت مستعد لبدء رحلة التعلم الممتعة؟
               </p>
 
               <p className="text-base md:text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-lg font-sans">
-                ابدأ الآن وتعلّم بأسلوب يخليك تفهم، تحب، وتتفوّق في الرياضيات زي ما عمرك ما تخيلت!
+                ابدأ الآن وتعلم بطريقة تجعلك تفهم وتحب الرياضيات أكثر من أي وقت مضى!
               </p>
 
               {/* CTA Buttons */}
@@ -125,7 +125,7 @@ const AnimatedHero = ({ onGetStarted }) => {
                 <div className="w-[280px] h-[280px] md:w-[360px] md:h-[360px] lg:w-[460px] lg:h-[460px] rounded-full border-4 border-orange-600 shadow-2xl overflow-hidden">
                   <img
                     src={mr} 
-                    alt="مستر مايكل روماني" 
+                    alt="مستر مصطفى على الدبوكش" 
                     className="w-full h-full rounded-full p-2 object-cover drop-shadow-2xl transform hover:scale-105 transition-transform duration-500 "
                   />
                 </div>
