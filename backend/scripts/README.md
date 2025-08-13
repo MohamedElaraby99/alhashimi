@@ -78,8 +78,8 @@ node scripts/create-admin-user.js
 ```env
 DB_TYPE=atlas
 MONGO_URI_ATLAS=mongodb+srv://username:password@cluster.mongodb.net/lms
-MONGO_URI_COMPASS=mongodb://localhost:27017/theeagle
-MONGO_URI_COMMUNITY=mongodb://localhost:27017/theeagle
+MONGO_URI_COMPASS=mongodb://localhost:27017/mrmostafa
+MONGO_URI_COMMUNITY=mongodb://localhost:27017/mrmostafa
 ```
 
 ## Quick Start
